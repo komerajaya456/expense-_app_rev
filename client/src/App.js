@@ -1,12 +1,12 @@
 import Register from './components/Register'
 
 function App(){
-  return(
-    <>
-    <h1>heading</h1>
-    <Register />
-    < />
-    )
+return(
+  <>  
+  <Register/>
+  </>
+)
+
 }
 
-export default App
+export default App;
