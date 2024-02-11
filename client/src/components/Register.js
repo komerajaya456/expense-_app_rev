@@ -2,33 +2,36 @@ import {useState} from 'react';
 import './Register.css'
 
 function Register(){
-  const [val,setval] = useState('last');
-  const [secval,setsecval]=useState('last');
-  console.log("hi komera");
+  const [val,setval] = useState({firstname:"",
+      age:0,
+  });
+  
+  
 
-  function handle(event){
-    setval("first");
-    console.log("here");
-    console.log(event.target.name);
+  function handle(e){
+    e.preventDefault();//this event to prevent 
+    setval.firstname(e.target.name.value);
+    setval.age(e.target.age.value)
+    
+    
   }
 
   return(
   <>
-    <h1>register form </h1>
-    <form className='reg-form' onSubmit={handle}>
+   <form className='reg-form' onSubmit={handle}>
+      <label>name </label>
+      <input name='name' type='text'/><br />
+      <input name='age' type='number'/>
+     <button>submit</button>
 
-    <label>Name{val}</label>
-    <input name="firnam" type='text'/>
-
-    <label>Email</label>
-    <input type='email'/>
-
-    <button type='submit'>submit</button>
-
-    </form>
+   </form>
+   
+     
+    <h1>register form {val.firstname}</h1>
+    <br />
+    <h1>2nd form {val.age}</h1>
   </> 
     )
 }
 
 export default Register;
- 
