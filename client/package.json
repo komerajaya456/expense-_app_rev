@@ -7,7 +7,10 @@
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
     "antd": "^5.14.1",
+<<<<<<< HEAD
     "axios": "^1.6.7",
+=======
+>>>>>>> 258cc3cbdde73d2499d101e99e0cde96828430be
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-scripts": "5.0.1",
