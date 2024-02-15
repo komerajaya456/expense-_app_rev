@@ -5,7 +5,8 @@ import axios from 'axios'
 function Register() {
   const [val, setVal] = useState('');
 
-  function handle(values) {
+  async function handle(values) {
+    await axios.post('http://localhost:8080/login',values)
     
     setVal(JSON.stringify(values))
   }
