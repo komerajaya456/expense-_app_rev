@@ -1,35 +1,46 @@
 import {useState} from 'react';
+import {Form,Input,Button} from 'antd';
 import './Register.css'
 
 function Register(){
-  const [val,setval] = useState({firstname:"",
-      age:0,
-  });
+  const [val,setval] = useState("kom");
   
   
 
-  function handle(e){
-    e.preventDefault();//this event to prevent 
-    setval.firstname(e.target.name.value);
-    setval.age(e.target.age.value)
-    
+  function handle(values){
+      setval(values.)
     
   }
 
   return(
   <>
-   <form className='reg-form' onSubmit={handle}>
-      <label>name </label>
-      <input name='name' type='text'/><br />
-      <input name='age' type='number'/>
-     <button>submit</button>
+ 
+  <h1>heading</h1>
+  
+  <Form onSubmit={handle}>
+  <Form.Item label="firstname">
+  <Input name='kvr' type='pa'/>
+  </Form.Item>
+  
+  <Form.Item>
+  <Button>submit</Button>
+  </Form.Item>
+  
+  </Form>
+  
+  
 
-   </form>
+  
+  
+  
+  
+  
+  
    
      
-    <h1>register form {val.firstname}</h1>
+    <h1>register form {val}</h1>
     <br />
-    <h1>2nd form {val.age}</h1>
+    <h1>2nd form {val}</h1>
   </> 
     )
 }
