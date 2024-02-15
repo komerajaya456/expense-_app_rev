@@ -1,37 +1,42 @@
-import {useState} from 'react';
-import './Register.css'
+import { useState } from 'react';
+import {Form,Input,Button} from 'antd';
+import axios from 'axios'
 
-function Register(){
-  const [val,setval] = useState({firstname:"",
-      age:0,
-  });
-  
-  
+function Register() {
+  const [val, setVal] = useState('');
 
-  function handle(e){
-    e.preventDefault();//this event to prevent 
-    setval.firstname(e.target.name.value);
-    setval.age(e.target.age.value)
+  function handle(values) {
     
-    
+    setVal(JSON.stringify(values))
   }
 
-  return(
-  <>
-   <form className='reg-form' onSubmit={handle}>
-      <label>name </label>
-      <input name='name' type='text'/><br />
-      <input name='age' type='number'/>
-     <button>submit</button>
+  return (
+    <>
 
-   </form>
-   
-     
-    <h1>register form {val.firstname}</h1>
-    <br />
-    <h1>2nd form {val.age}</h1>
-  </> 
-    )
+    <Form onFinish={handle}>
+      <Form.Item label='firstname' name='kvr'>
+        <Input type='password' />
+      </Form.Item>
+
+    <Form.Item >
+      <Button htmlType='submit'>submit</Button>
+    </Form.Item>
+
+    </Form>
+{/*     
+      <form className='reg-form' onSubmit={handle}>
+        <label>name </label>
+        <input name='name' type='text' /><br />
+        <input name='age' type='number' />
+        <button type="submit">submit</button>
+      </form> */}
+
+      <h1>register form {val}</h1>
+      <br />
+      <h1>2nd form {val}</h1>
+    </>
+  );
 }
 
 export default Register;
+
