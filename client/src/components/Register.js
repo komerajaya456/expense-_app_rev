@@ -5,18 +5,38 @@ import axios from 'axios'
 function Register() {
   const [val, setVal] = useState('');
 
-  async function handle(values) {
-    await axios.post('http://localhost:8080/login',values)
+  // async function handle(values) {
+  //   await axios.post('http://localhost:8080/login',values)
     
-    setVal(JSON.stringify(values))
-  }
+  //   setVal(JSON.stringify(values))
+  // }
+ 
+    async function handle(values) { 
+      try {
+        await fetch('http://localhost:8080/login', {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json'
+          },
+          body: JSON.stringify(values)
+        })
+    
+    
+      } catch (error) {
+        console.error('Error occurred while sending data:', error);
+        // Handle error gracefully (e.g., display an error message to the user)
+      }
+    }
+     
+ 
+  
 
   return (
     <>
 
     <Form onFinish={handle}>
       <Form.Item label='firstname' name='kvr'>
-        <Input type='password' />
+        <Input type='text' />
       </Form.Item>
 
     <Form.Item >
