@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import {Form,Input,Button} from 'antd';
 import axios from 'axios'
+import './Register.css'
 
 function Register() {
   const [val, setVal] = useState('');
@@ -34,10 +35,26 @@ function Register() {
   return (
     <>
 
-    <Form onFinish={handle}>
-      <Form.Item label='firstname' name='kvr'>
+    <Form onFinish={handle} className="reg-form">
+      <Form.Item label='Name' name='name'>
         <Input type='text' />
       </Form.Item>
+      <br/>
+    <Form.Item label='Email' name='email'>
+    <Input type='email'/>
+      
+    
+    </Form.Item>
+    
+    <Form.Item label="Password" name="password">
+    
+    <Input type="Password"/>
+    </Form.Item>
+
+    <Form.Item label='Re-enter Password' name="repassword">
+      <Input type="password"/>
+    </Form.Item>
+
 
     <Form.Item >
       <Button htmlType='submit'>submit</Button>
