@@ -34,8 +34,8 @@ function Register() {
 
   return (
     <>
-
-    <Form onFinish={handle} className="reg-form">
+  <div className="reg-form">
+    <Form onFinish={handle} >
       <Form.Item label='Name' name='name'>
         <Input type='text' />
       </Form.Item>
@@ -61,6 +61,8 @@ function Register() {
     </Form.Item>
 
     </Form>
+    
+    </div>
 {/*     
       <form className='reg-form' onSubmit={handle}>
         <label>name </label>
@@ -69,9 +71,7 @@ function Register() {
         <button type="submit">submit</button>
       </form> */}
 
-      <h1>register form {val}</h1>
-      <br />
-      <h1>2nd form {val}</h1>
+     
     </>
   );
 }
