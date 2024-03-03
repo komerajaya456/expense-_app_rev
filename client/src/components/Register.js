@@ -37,8 +37,8 @@ function Register() {
   <div className="reg-form">
     <Form onFinish={handle} >
       <Form.Item label='Name' name='name'>
-        <Input type='text' />
-      </Form.Item>
+        <Input type='text'/>
+      </Form.Item> 
       <br/>
     <Form.Item label='Email' name='email'>
     <Input type='email'/>
