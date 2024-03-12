@@ -16,17 +16,4 @@ app.listen(8080,()=>{console.log(`running in port ${8080} in chrome`)})
 //other 
 //other2
 //other 3
-
-=======
-//second 
-//third 
-//fourth
-//fifth
-//sixth1  
-<<<<<<< HEAD
-//7thr
->>>>>>> e361f0c ("")
-=======
-//7thrth
-//8 th
->>>>>>> 588d5c0 (commited 4th time in galaxy using msg (){} in bash.bashrc file)
+//other 4
