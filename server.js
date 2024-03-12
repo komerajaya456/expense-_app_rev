@@ -11,8 +11,17 @@ connectdb()
   
 app.listen(8080,()=>{console.log(`running in port ${8080} in chrome`)})
 //hello
+<<<<<<< HEAD
 //git operation  
 //other 
 //other2
 //other 3
 
+=======
+//second 
+//third 
+//fourth
+//fifth
+//sixth1  
+//7thr
+>>>>>>> e361f0c ("")
