@@ -19,11 +19,5 @@ app.listen(8080,()=>{console.log(`running in port ${8080} in chrome`)})
 //sixth1  
 //7thrth
 //8 th
-=======
-<<<<<<< HEAD
-//git operation  
-//other 
-//other2
-//other 3
-//other 4
->>>>>>> origin/main
+
+//other 6
