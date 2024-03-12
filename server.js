@@ -9,8 +9,9 @@ app.use(cors({ origin: 'http://localhost:3000' }));//we use this to not get erro
 app.use('/login',router)
 connectdb()
   
-app.listen(8080,()=>{console.log(`running in port ${8080}`)})
+app.listen(8080,()=>{console.log(`running in port ${8080} in chrome`)})
 //hello
+<<<<<<< HEAD
 //second 
 //third 
 //fourth
@@ -18,3 +19,11 @@ app.listen(8080,()=>{console.log(`running in port ${8080}`)})
 //sixth1  
 //7thrth
 //8 th
+=======
+<<<<<<< HEAD
+//git operation  
+//other 
+//other2
+//other 3
+//other 4
+>>>>>>> origin/main
