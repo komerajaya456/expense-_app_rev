@@ -10,15 +10,4 @@ app.use('/login',router)
 connectdb()
   
 app.listen(8080,()=>{console.log(`running in port ${8080} in chrome`)})
-//hello
-<<<<<<< HEAD
-//second 
-//third 
-//fourth
-//fifth
-//sixth1  
-//7thrth
-//8 th
-
-//other 6
-//other 7
+//hello 
